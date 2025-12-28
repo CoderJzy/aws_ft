@@ -3,7 +3,7 @@ from sagemaker.train.configs import SourceCode, InputData, Compute, OutputDataCo
 from sagemaker.core.s3 import S3Uploader
 from sagemaker.core import image_uris
 
-bucket = "test"
+bucket = "yelan-test"
 prefix = "qwen3"
 
 # 上传数据和代码到 S3
