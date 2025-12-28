@@ -4,7 +4,7 @@ from datasets import load_dataset
 import os
 
 # 模型路径
-model_id = os.environ.get("MODEL_ID", "Qwen/Qwen2.5-1.5B")
+model_id = os.environ.get("model_id", "Qwen/Qwen3-1.7B")
 
 # 加载 tokenizer 和 model
 tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
