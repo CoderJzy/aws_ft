@@ -5,3 +5,5 @@ safetensors
 bitsandbytes
 datasets
 ms-swift
+sagemaker
+awscli
