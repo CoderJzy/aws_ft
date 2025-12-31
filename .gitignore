@@ -1,5 +1,4 @@
 .idea/
-.python-version
 package-lock.json
 package.json
 uv.lock
