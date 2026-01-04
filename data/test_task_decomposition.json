@@ -1,0 +1,446 @@
+{
+  "test_dataset_name": "Task Decomposition",
+  "version": "1.0",
+  "total_queries": 40,
+  "task_decompositions": [
+    {
+      "id": 1,
+      "original_question": "In a high-rate world, give me 3 equity longs that benefit (like JPM or V) and 3 duration-heavy shorts (like IWM or high-multiple tech) that will struggle.",
+      "subtasks": [
+        {"query": "Identify equity stocks that benefit from high interest rate environments"},
+        {"query": "Analyze JPM and V performance correlation with interest rates"},
+        {"query": "Identify duration-heavy or high-multiple tech stocks that struggle in high-rate environments"},
+        {"query": "Recommend 3 equity longs for high-rate world"},
+        {"query": "Recommend 3 shorts among duration-heavy or high-multiple tech stocks"}
+      ]
+    },
+    {
+      "id": 2,
+      "original_question": "If a soft landing is the base case, which cyclicals like CAT or DE should I long, and which defensive over-owns like WMT should I short?",
+      "subtasks": [
+        {"query": "Identify cyclical stocks that benefit from soft landing scenario"},
+        {"query": "Analyze CAT and DE fundamentals and cyclical positioning"},
+        {"query": "Identify over-owned defensive stocks that may underperform in soft landing"},
+        {"query": "Recommend cyclical longs for soft landing scenario"},
+        {"query": "Recommend defensive shorts for soft landing scenario"}
+      ]
+    },
+    {
+      "id": 3,
+      "original_question": "If recession odds rise, which quality/low-beta longs (e.g., PG, KO) should I rotate into versus highly levered cyclicals (e.g., AA) to short?",
+      "subtasks": [
+        {"query": "Identify quality low-beta stocks suitable for recession protection"},
+        {"query": "Analyze PG and KO defensive characteristics and recession performance"},
+        {"query": "Identify highly levered cyclical stocks vulnerable to recession"},
+        {"query": "Recommend quality/low-beta longs for recession scenario"},
+        {"query": "Recommend highly levered cyclical shorts for recession scenario"}
+      ]
+    },
+    {
+      "id": 4,
+      "original_question": "The Dollar is very strong; name 3 exporters/FX winners to long and 3 FX-exposed names like MSFT or ORCL to short or hedge.",
+      "subtasks": [
+        {"query": "Identify US exporters that benefit from strong dollar"},
+        {"query": "Analyze FX exposure of MSFT and ORCL"},
+        {"query": "Recommend 3 exporter/FX winner longs for strong dollar environment"},
+        {"query": "Recommend 3 FX-exposed names to short or hedge"}
+      ]
+    },
+    {
+      "id": 5,
+      "original_question": "Give me a pure value playbook: which cheap, clean balance sheet names (like VZ or T) are longs, and which obvious value traps (like CVNA) are shorts?",
+      "subtasks": [
+        {"query": "Screen for cheap stocks with clean balance sheets"},
+        {"query": "Analyze VZ and T valuation and balance sheet quality"},
+        {"query": "Identify potential value traps with deteriorating fundamentals"},
+        {"query": "Recommend value longs with clean balance sheets"},
+        {"query": "Recommend value trap shorts to avoid"}
+      ]
+    },
+    {
+      "id": 6,
+      "original_question": "Regarding the high-quality factor: which durable ROIC longs should I hold, and which low-ROE 'zombies' are prime candidates to short?",
+      "subtasks": [
+        {"query": "Identify stocks with high and durable ROIC"},
+        {"query": "Analyze quality metrics including ROIC sustainability"},
+        {"query": "Identify low-ROE zombie companies with poor fundamentals"},
+        {"query": "Recommend high-quality ROIC longs"},
+        {"query": "Recommend low-ROE zombie shorts"}
+      ]
+    },
+    {
+      "id": 7,
+      "original_question": "For the momentum factor: which trending longs have earnings support (like NVDA), and which broken momentum names (like TSLA) should I short?",
+      "subtasks": [
+        {"query": "Identify stocks with strong price momentum and earnings support"},
+        {"query": "Analyze NVDA momentum and earnings trend"},
+        {"query": "Identify broken momentum stocks with deteriorating fundamentals"},
+        {"query": "Recommend momentum longs with earnings support"},
+        {"query": "Recommend broken momentum shorts"}
+      ]
+    },
+    {
+      "id": 8,
+      "original_question": "Low-vol factor play: suggest 3 defensive longs (like PEP or CL) and 3 hyper-beta shorts (like COIN) for a market-neutral setup.",
+      "subtasks": [
+        {"query": "Identify low-volatility defensive stocks"},
+        {"query": "Analyze PEP and CL volatility and defensive characteristics"},
+        {"query": "Identify high-beta volatile stocks"},
+        {"query": "Recommend 3 defensive low-vol longs"},
+        {"query": "Recommend 3 hyper-beta shorts for market-neutral setup"}
+      ]
+    },
+    {
+      "id": 9,
+      "original_question": "Which names with big EPS revisions up are still buyable longs (e.g., META) versus already over-priced shorts (e.g., INTC)?",
+      "subtasks": [
+        {"query": "Screen for stocks with significant positive EPS revisions"},
+        {"query": "Analyze META EPS revisions and current valuation"},
+        {"query": "Identify stocks with positive revisions but over-extended valuations"},
+        {"query": "Recommend buyable longs with EPS momentum"},
+        {"query": "Recommend over-priced shorts despite positive revisions"}
+      ]
+    },
+    {
+      "id": 10,
+      "original_question": "List serial beat-and-raise names to long (like COST or LLY) and serial miss-and-guide-down names (like NKE) to short.",
+      "subtasks": [
+        {"query": "Identify stocks with consistent earnings beats and guidance raises"},
+        {"query": "Analyze COST and LLY earnings track record"},
+        {"query": "Identify stocks with pattern of earnings misses and guidance cuts"},
+        {"query": "Recommend serial beat-and-raise longs"},
+        {"query": "Recommend serial miss-and-guide-down shorts"}
+      ]
+    },
+    {
+      "id": 11,
+      "original_question": "Identify clean FCF/EPS conversion longs versus low-quality 'adjusted EPS' shorts that rely on heavy stock-based compensation.",
+      "subtasks": [
+        {"query": "Screen for stocks with high FCF to EPS conversion ratio"},
+        {"query": "Analyze earnings quality metrics across companies"},
+        {"query": "Identify companies with heavy stock-based compensation distorting earnings"},
+        {"query": "Recommend clean FCF/EPS conversion longs"},
+        {"query": "Recommend low-quality adjusted EPS shorts"}
+      ]
+    },
+    {
+      "id": 12,
+      "original_question": "Which net-cash, FCF-rich compounders (like GOOGL) should I long, and which over-levered, dilutive names (like WBD) should I short?",
+      "subtasks": [
+        {"query": "Identify net-cash companies with strong FCF generation"},
+        {"query": "Analyze GOOGL balance sheet and FCF metrics"},
+        {"query": "Identify over-levered companies with equity dilution"},
+        {"query": "Recommend net-cash FCF-rich compounders to long"},
+        {"query": "Recommend over-levered dilutive names to short"}
+      ]
+    },
+    {
+      "id": 13,
+      "original_question": "Consumer trade: which resilient brands (like LULU) are longs, and which over-earning pandemic winners (like PTON) are structural shorts?",
+      "subtasks": [
+        {"query": "Identify resilient consumer brands with sustainable growth"},
+        {"query": "Analyze LULU brand strength and post-pandemic performance"},
+        {"query": "Identify pandemic winners with unsustainable earnings"},
+        {"query": "Recommend resilient consumer brand longs"},
+        {"query": "Recommend structural shorts among pandemic winners"}
+      ]
+    },
+    {
+      "id": 14,
+      "original_question": "As US housing cools, which homebuilders (DHI, LEN) are still longs due to inventory shortages, and which building-products are shorts?",
+      "subtasks": [
+        {"query": "Analyze US housing market conditions and inventory levels"},
+        {"query": "Evaluate DHI and LEN positioning in current housing cycle"},
+        {"query": "Identify building products companies vulnerable to housing slowdown"},
+        {"query": "Recommend homebuilder longs benefiting from inventory shortages"},
+        {"query": "Recommend building products shorts"}
+      ]
+    },
+    {
+      "id": 15,
+      "original_question": "Capex boom: identify industrial automation/tooling longs (like ETN) and over-earning freight/spot-cyclical shorts (like FDX).",
+      "subtasks": [
+        {"query": "Identify industrial automation and tooling companies benefiting from capex boom"},
+        {"query": "Analyze ETN positioning in automation/tooling space"},
+        {"query": "Identify freight and spot-cyclical companies with over-earning risk"},
+        {"query": "Recommend industrial automation/tooling longs"},
+        {"query": "Recommend freight/spot-cyclical shorts"}
+      ]
+    },
+    {
+      "id": 16,
+      "original_question": "Ad-cycle up: which ad platform longs (like TTD) win, and which ad-dependent small caps (like SNAP) are likely shorts?",
+      "subtasks": [
+        {"query": "Identify ad platforms benefiting from advertising cycle upturn"},
+        {"query": "Analyze TTD competitive position in ad tech"},
+        {"query": "Identify vulnerable ad-dependent small cap companies"},
+        {"query": "Recommend ad platform longs for ad-cycle upturn"},
+        {"query": "Recommend ad-dependent small cap shorts"}
+      ]
+    },
+    {
+      "id": 17,
+      "original_question": "Travel demand is strong: name the best hotel/airline longs (like BKNG) and the structurally weak players (like SAVE) to short.",
+      "subtasks": [
+        {"query": "Analyze current travel demand trends"},
+        {"query": "Identify best-positioned hotel and airline stocks"},
+        {"query": "Analyze BKNG competitive advantages"},
+        {"query": "Identify structurally weak travel players"},
+        {"query": "Recommend hotel/airline longs and structurally weak shorts"}
+      ]
+    },
+    {
+      "id": 18,
+      "original_question": "Onshoring theme: which logistics/automation names are longs, and which offshoring-dependent brands (like NKE) are shorts?",
+      "subtasks": [
+        {"query": "Identify logistics and automation companies benefiting from onshoring"},
+        {"query": "Analyze onshoring trends and beneficiaries"},
+        {"query": "Identify brands heavily dependent on offshore manufacturing"},
+        {"query": "Recommend logistics/automation longs for onshoring theme"},
+        {"query": "Recommend offshoring-dependent shorts"}
+      ]
+    },
+    {
+      "id": 19,
+      "original_question": "Grid/power upgrade: which T&D and equipment longs (like PWR or VRT) benefit, and which laggard utilities (like NEE) are shorts?",
+      "subtasks": [
+        {"query": "Identify T&D and equipment companies benefiting from grid upgrades"},
+        {"query": "Analyze PWR and VRT positioning in power infrastructure"},
+        {"query": "Identify laggard utilities underperforming in grid modernization"},
+        {"query": "Recommend T&D and equipment longs"},
+        {"query": "Recommend laggard utility shorts"}
+      ]
+    },
+    {
+      "id": 20,
+      "original_question": "Solar/wind: which real earnings stories (like FSLR) should I long, and which subsidy-only stories (like RUN) are shorts?",
+      "subtasks": [
+        {"query": "Identify solar/wind companies with sustainable earnings"},
+        {"query": "Analyze FSLR fundamentals and earnings quality"},
+        {"query": "Identify renewable energy companies overly dependent on subsidies"},
+        {"query": "Recommend solar/wind longs with real earnings"},
+        {"query": "Recommend subsidy-dependent shorts"}
+      ]
+    },
+    {
+      "id": 21,
+      "original_question": "Defense spend up: which quality defense longs (LMT, RTX) are real, and which hype-only defense 'plays' are shorts?",
+      "subtasks": [
+        {"query": "Analyze defense spending trends and budget outlook"},
+        {"query": "Evaluate LMT and RTX as quality defense investments"},
+        {"query": "Identify overhyped defense stocks without real earnings benefit"},
+        {"query": "Recommend quality defense longs"},
+        {"query": "Recommend hype-only defense shorts"}
+      ]
+    },
+    {
+      "id": 22,
+      "original_question": "In a high-tariff scenario, which US-production winners are longs and which import-heavy brands are shorts?",
+      "subtasks": [
+        {"query": "Identify companies with significant US-based production"},
+        {"query": "Analyze tariff impact on different sectors"},
+        {"query": "Identify import-heavy brands vulnerable to tariffs"},
+        {"query": "Recommend US-production winner longs for high-tariff scenario"},
+        {"query": "Recommend import-heavy brand shorts"}
+      ]
+    },
+    {
+      "id": 23,
+      "original_question": "China risk is high: which diversified EM/US names (like EMXC) are longs, and which single-country exposure names (BABA, JD) are shorts?",
+      "subtasks": [
+        {"query": "Identify diversified EM exposure investments excluding China"},
+        {"query": "Analyze EMXC composition and China exclusion benefits"},
+        {"query": "Identify stocks with concentrated China exposure risk"},
+        {"query": "Recommend diversified EM/US longs"},
+        {"query": "Recommend single-country China exposure shorts"}
+      ]
+    },
+    {
+      "id": 24,
+      "original_question": "Identify buyback monsters to long (like AAPL) versus serial equity issuers (like AMC) to short.",
+      "subtasks": [
+        {"query": "Screen for companies with aggressive share buyback programs"},
+        {"query": "Analyze AAPL capital return history and buyback impact"},
+        {"query": "Identify serial equity issuers diluting shareholders"},
+        {"query": "Recommend buyback-focused longs"},
+        {"query": "Recommend serial equity issuer shorts"}
+      ]
+    },
+    {
+      "id": 25,
+      "original_question": "Which names show heavy insider buying (longs) versus those with heavy insider selling and lock-up expirations (shorts)?",
+      "subtasks": [
+        {"query": "Screen for stocks with significant insider buying activity"},
+        {"query": "Analyze insider transaction patterns and signals"},
+        {"query": "Identify stocks with heavy insider selling or upcoming lock-up expirations"},
+        {"query": "Recommend longs with insider buying signals"},
+        {"query": "Recommend shorts with insider selling or lock-up concerns"}
+      ]
+    },
+    {
+      "id": 26,
+      "original_question": "Index additions and deletions: which new entrants (like SMCI or DELL) should I long, and which deletions (like WBA) should I short?",
+      "subtasks": [
+        {"query": "Identify upcoming index additions to major indices"},
+        {"query": "Analyze SMCI and DELL as index addition candidates"},
+        {"query": "Identify upcoming index deletions"},
+        {"query": "Recommend index addition longs"},
+        {"query": "Recommend index deletion shorts"}
+      ]
+    },
+    {
+      "id": 27,
+      "original_question": "ETF crowding: which crowded constituents are prime to short on a reversal, and which under-owned peers are longs?",
+      "subtasks": [
+        {"query": "Analyze ETF ownership concentration across stocks"},
+        {"query": "Identify crowded ETF constituents vulnerable to outflows"},
+        {"query": "Identify under-owned stocks relative to peers"},
+        {"query": "Recommend under-owned longs"},
+        {"query": "Recommend crowded constituent shorts"}
+      ]
+    },
+    {
+      "id": 28,
+      "original_question": "High short-interest with improving fundamentals: which are squeeze-candidate longs (like CVNA) and which are hopeless stories to short (like AMC)?",
+      "subtasks": [
+        {"query": "Screen for high short-interest stocks with improving fundamentals"},
+        {"query": "Analyze CVNA short interest and fundamental improvement"},
+        {"query": "Identify high short-interest stocks with deteriorating fundamentals"},
+        {"query": "Recommend squeeze-candidate longs"},
+        {"query": "Recommend hopeless story shorts"}
+      ]
+    },
+    {
+      "id": 29,
+      "original_question": "Options skew is extreme: name stocks where calls are too rich (short) versus where puts are too rich (long).",
+      "subtasks": [
+        {"query": "Analyze options skew across stocks"},
+        {"query": "Identify stocks with overpriced call options"},
+        {"query": "Identify stocks with overpriced put options"},
+        {"query": "Recommend longs where puts are too rich"},
+        {"query": "Recommend shorts where calls are too rich"}
+      ]
+    },
+    {
+      "id": 30,
+      "original_question": "Reddit/WSB most talked: identify 2 real turnaround longs and 2 pure 'exit-liquidity' shorts.",
+      "subtasks": [
+        {"query": "Analyze Reddit and WSB most discussed stocks"},
+        {"query": "Identify stocks with real turnaround potential among social media favorites"},
+        {"query": "Identify pure speculation plays without fundamental support"},
+        {"query": "Recommend 2 real turnaround longs"},
+        {"query": "Recommend 2 exit-liquidity shorts"}
+      ]
+    },
+    {
+      "id": 31,
+      "original_question": "Heavy retail flow: which names are structurally mis-owned longs versus those that are over-owned and ready to be shorted?",
+      "subtasks": [
+        {"query": "Analyze retail investor flow data"},
+        {"query": "Identify structurally under-owned stocks by retail"},
+        {"query": "Identify over-owned stocks by retail investors"},
+        {"query": "Recommend structurally mis-owned longs"},
+        {"query": "Recommend over-owned shorts"}
+      ]
+    },
+    {
+      "id": 32,
+      "original_question": "Spin-offs: which parents or spincos (like GEV) are longs, and which side of the trade is the short (like SOLV)?",
+      "subtasks": [
+        {"query": "Identify recent and upcoming corporate spin-offs"},
+        {"query": "Analyze GEV spin-off value creation"},
+        {"query": "Evaluate parent vs spinco value in recent spin-offs"},
+        {"query": "Recommend spin-off longs"},
+        {"query": "Recommend spin-off shorts"}
+      ]
+    },
+    {
+      "id": 33,
+      "original_question": "M&A: which likely targets are longs, and which obvious value-destroying acquirers should I short?",
+      "subtasks": [
+        {"query": "Identify potential M&A targets based on strategic fit"},
+        {"query": "Analyze acquisition premium potential for likely targets"},
+        {"query": "Identify serial acquirers with poor M&A track record"},
+        {"query": "Recommend M&A target longs"},
+        {"query": "Recommend value-destroying acquirer shorts"}
+      ]
+    },
+    {
+      "id": 34,
+      "original_question": "Turnaround stories: which have credible plans (longs) versus which are just wishful thinking (shorts)?",
+      "subtasks": [
+        {"query": "Identify companies in turnaround mode with credible plans"},
+        {"query": "Analyze turnaround execution progress and management credibility"},
+        {"query": "Identify failed turnaround stories without real progress"},
+        {"query": "Recommend credible turnaround longs"},
+        {"query": "Recommend wishful thinking turnaround shorts"}
+      ]
+    },
+    {
+      "id": 35,
+      "original_question": "Secular decliners: are there any contrarian longs left in retail (like BBY), or are they all just structural shorts?",
+      "subtasks": [
+        {"query": "Analyze secular decline trends in retail sector"},
+        {"query": "Evaluate BBY as potential contrarian opportunity"},
+        {"query": "Identify retail stocks with no path to recovery"},
+        {"query": "Recommend contrarian retail longs if any"},
+        {"query": "Recommend structural retail shorts"}
+      ]
+    },
+    {
+      "id": 36,
+      "original_question": "Theme AI is on: give me 3 quality longs and 3 'hype-only' shorts.",
+      "subtasks": [
+        {"query": "Identify quality AI companies with real revenue and earnings"},
+        {"query": "Analyze AI theme beneficiaries by fundamental quality"},
+        {"query": "Identify AI hype stocks without real business traction"},
+        {"query": "Recommend 3 quality AI longs"},
+        {"query": "Recommend 3 hype-only AI shorts"}
+      ]
+    },
+    {
+      "id": 37,
+      "original_question": "If the Growth-to-Value rotation accelerates, who are the 3 cleanest longs and 3 cleanest shorts?",
+      "subtasks": [
+        {"query": "Analyze growth vs value factor performance trends"},
+        {"query": "Identify value stocks that benefit most from rotation"},
+        {"query": "Identify growth stocks most vulnerable to rotation"},
+        {"query": "Recommend 3 cleanest value longs"},
+        {"query": "Recommend 3 cleanest growth shorts"}
+      ]
+    },
+    {
+      "id": 38,
+      "original_question": "In the Fintech sector, which 2 names should I own (long) and which 2 should I be short?",
+      "subtasks": [
+        {"query": "Analyze fintech sector landscape and competitive dynamics"},
+        {"query": "Identify strongest fintech players with sustainable moats"},
+        {"query": "Identify weakest fintech players losing market share"},
+        {"query": "Recommend 2 fintech longs"},
+        {"query": "Recommend 2 fintech shorts"}
+      ]
+    },
+    {
+      "id": 39,
+      "original_question": "If the dollar dumps, which EM-tilted US stocks (like MELI) should I long, and which domestic dollar winners should I short?",
+      "subtasks": [
+        {"query": "Identify US stocks with significant EM revenue exposure"},
+        {"query": "Analyze MELI EM exposure and dollar sensitivity"},
+        {"query": "Identify domestic-focused stocks that benefited from strong dollar"},
+        {"query": "Recommend EM-tilted longs for dollar weakness"},
+        {"query": "Recommend domestic dollar winner shorts"}
+      ]
+    },
+    {
+      "id": 40,
+      "original_question": "Water/scarcity theme: name core infra longs (AWK) versus 'green-washed' shorts that lack real assets.",
+      "subtasks": [
+        {"query": "Identify core water infrastructure companies with real assets"},
+        {"query": "Analyze AWK water infrastructure positioning"},
+        {"query": "Identify green-washed water plays without real asset base"},
+        {"query": "Recommend core water infrastructure longs"},
+        {"query": "Recommend green-washed water shorts"}
+      ]
+    }
+  ]
+}
